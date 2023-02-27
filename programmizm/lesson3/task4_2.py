@@ -1,8 +1,8 @@
-print("Leave a review.")
+phrase = ''
 
-phrase = input()
+print("Leave a review.")
 while phrase != "off":
-    print("Thanks for your voice.")
     phrase = input()
+    print("Thanks for your voice.")
 
 print("Preference system is configured.")
