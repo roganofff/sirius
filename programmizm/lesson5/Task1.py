@@ -7,4 +7,4 @@ for i in range(10):
     cubed_numbers[i + 1] = pow((i + 1), 3)
 
 for number in cubed_numbers:
-    print("Cubed ", number, " is ", cubed_numbers[number])
+    print("Cubed", number, "is", cubed_numbers[number])
