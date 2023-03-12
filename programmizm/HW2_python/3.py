@@ -1,10 +1,10 @@
-num = int(input())
-count = 0
-summ = 0
+num = int(input()) # получаем на вход первое число
+count = 0 # счётчик
+summ = 0  # сумма всех чисел
 
-while num != 0:
-    summ += num
-    count += 1
-    num = int(input())
+while num != 0: # пока юзер не введёт 0, будет выполняться цикл
+    summ += num # складываем все введённые числа 
+    count += 1 # прибавляем к счётчику 1 после каждого добавленного числа
+    num = int(input()) # получаем новое число
 
-print(summ / count)
+print(summ / count) # выводим средн. арифм. всех чисел
