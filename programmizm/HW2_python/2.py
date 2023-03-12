@@ -1,6 +1,12 @@
 N = int(input())
-nums = input()
+has_Null = False
 
-for i in range(nums):
-    if nums[i] == ' ' and nums[i + 1] == '0':
-        print('YES')
+for i in range(N):
+    num = int(input())
+    if num == 0:
+        has_Null = True
+
+if has_Null:
+    print('YES')
+else:
+    print('NO')
