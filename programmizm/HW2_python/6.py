@@ -6,4 +6,4 @@ for i in range(1, N + 1): # перебираем все числа от 1 до N
     prod *= i # умножаем одно число на следующее
     summ += 1 / prod # считаем сумму
 
-print(summ)
+print(round(summ, 5))
