@@ -1,9 +1,9 @@
-x1 = int(input())
+x1 = int(input()) # получаем на вход необходимые данные
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
 
-if x1 / abs(x1) == x2 / abs(x2) and y1 / abs(y1) == y2 / abs(y2):
-    print('YES')
-else:
+if x1 / abs(x1) == x2 / abs(x2) and y1 / abs(y1) == y2 / abs(y2): # делим координату на саму себя под модулем, чтобы остался лишь знак
+    print('YES')                                                  # и если каждый знак совпадает со знаком второй точки, то они находятся в одной четверти
+else:            # выводим да или нет
     print('NO')
