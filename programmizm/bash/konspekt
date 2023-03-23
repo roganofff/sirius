@@ -46,7 +46,7 @@ done < lines.txt
 -d является ли директорией
 -f есть ли такой файл и является ли файлом
 -x является ли исполняемым файлом
--s является ли пустым
+-s проверяет на нулевой размер
 -r/-w имеет ли права прочтения или записи
 
 
@@ -91,3 +91,37 @@ esac
 --------------------
 
 shift 
+
+
+================================================
+
+curl -X GET https://class.sirius.ru 
+-X GET - возвращает всю страницу
+-I - возвращает, что делает
+-o - куда направить вывод
+
+
+ПОТОКИ
+0 - stdin - standart input
+1 - stdout - standart output
+2 - stderr - standart error
+
+
+./script.sh 1>output_file 2>error_file # направляем вывод и ошибки в отдельные файлы
+./script.sh >file
+
+echo "msg1" > &1 # перенаправляем в поток &1
+
+exec 1>output # всегда перенаправлять поток в output
+exec 3>warnings.txt
+
+./time.sh 6 & # при & процесс запускается в фоне
+
+kill -9 - убивает любой процесс
+# SIGKILL - это и есть -0, убийство силой
+# SIGTERM - signal terminate
+# SIGINT - ctrl+c
+# SIGSTOP - ctrl+z
+# EXIT - любой выход
+
+nohup - не выводит ничего в терминал, а в nohup.out

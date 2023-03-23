@@ -29,7 +29,7 @@ do
     echo $arg
 done
 
-echo "all args using \$@"
+echo "all args using \$@" # выводит арг таким образом, что по ним можно пройтись циклом
 for arg in "$@"
 do
     echo $arg
