@@ -5,7 +5,7 @@ function f2
 {
     echo "Это функция два"
     echo "args2: $1 $2"
-    return 1
+    return
 }
 
 result=$(f2)
