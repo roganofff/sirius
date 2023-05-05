@@ -3,16 +3,16 @@
 int main()
 {
     int n, cnt;
-    scanf("%d", &n);
-    int arr[n];
+    scanf("%d", &n); // получаем всякие прикольчикии
+    int arr[n]; // объявляем массив длинной n
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) // получаем массив длинной n
     {
-        scanf("%d", &arr[i]);
-        if (arr[i] > 0) cnt++;
+        scanf("%d", &arr[i]); // получаем число
+        if (arr[i] > 0) cnt++; // если оно больше нула, увеличиваем счётчик
     }
 
-    printf("%d\n", cnt);
+    printf("%d\n", cnt); // выводы делайте сами
     
     return 0;
 }

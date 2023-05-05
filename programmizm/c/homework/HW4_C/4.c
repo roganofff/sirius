@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+// РЕКОМЕНДУЮ ЗАПУСКАТЬ НЕ ЧЕРЕЗ VS CODE, А ЧЕРЕЗ ОБЫЧНЫЙ ТЕРМИНАЛ
 int main()
 {
     int n;

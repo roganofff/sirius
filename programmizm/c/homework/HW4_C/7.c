@@ -2,18 +2,18 @@
 
 int main()
 {
-    int n, num, pos, neg, zeros;
+    int n, num, pos, neg, zeros; // приколямбосы опять получаем
     scanf("%d", &n);
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) // получаем n чисел
     {
-        scanf("%d", &num);
-        if (num > 0) pos++;
-        else if (num == 0) zeros++;
-        else neg++;
+        scanf("%d", &num); // получаем число
+        if (num > 0) pos++; // если оно положительное, то оно положительное 
+        else if (num == 0) zeros++; // если оно равно нулю, то оно равно нулю
+        else neg++; // а в любом другом случае, оно не положительное и не равно нулю, а значит отрицательновое
     }
 
-    printf("%d %d %d\n", zeros, pos, neg);
+    printf("%d %d %d\n", zeros, pos, neg); // вывод прям как в лабораторной по физике
     
     return 0;
 }

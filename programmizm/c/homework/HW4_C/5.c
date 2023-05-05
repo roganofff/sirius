@@ -3,15 +3,15 @@
 int main ()
 {
     float sum = 0, cnt = 0, num;
-    scanf("%f", &num);
-    while (num != 0)
+    scanf("%f", &num); // получаем нужные данные
+    while (num != 0) // пока не будет введён 0 в число, выполняем цикл
     {
-        sum += num;
-        cnt++;
-        scanf("%f", &num);
+        sum += num; // суммируем все числа
+        cnt++; // увеличиваем счётчик всех чисел на 1
+        scanf("%f", &num); // получаем следующее число
     }
 
-    printf("%f", sum / cnt);
+    printf("%f", sum / cnt); // выводим среднее арифметическое
 
     return 0;
 }
