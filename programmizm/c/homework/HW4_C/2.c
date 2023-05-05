@@ -9,13 +9,14 @@ int main()
     int cnt = 1;
     for (int i = 0; i < 7 * weeks; i++)
     {
-        if (i < 7 && i < n - 1 || cnt > k) printf("  ");
+        if (i <= 7 && i <= n - 1 || cnt > k) printf("  ");
         else 
         { 
             (cnt < 10) ? printf(" %d", cnt) : printf("%d", cnt); 
             cnt++; 
         }
-        if (i % 7 == 0) printf(" ");
+        if (i % 7 != 0) printf(" ");
+        else printf("\n");
     }
     printf("\n");
 
