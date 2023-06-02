@@ -29,11 +29,5 @@ int main()
 
     printf("%d\n", canGet(start, finish));
 
-    // struct Coord start1 = {5, 8}, finish1 = {7, 8}; // 
-    // printf("%d\n", canGet(start1, finish1));
-
-    // struct Coord start2 = {1, 2}, finish2 = {3, 4};
-    // printf("%d\n", canGet(start2, finish2));
-
     return 0;
 }
